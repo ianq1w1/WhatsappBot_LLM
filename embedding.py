@@ -1,9 +1,13 @@
 import requests
 import numpy as np
 import re
+import os
+from dotenv import load_dotenv
 
-OLLAMA_HOST = "http://localhost:11434"  # ou IP da VPS, se for diferente
-MODEL_NAME = "intfloat-multilingual-e5-large:f32"
+load_dotenv()
+
+OLLAMA_HOST = os.getenv("OLLAMA_HOST") # ou IP da VPS, se for diferente
+MODEL_NAME = os.getenv("EMBEDDING_MODEL")
 
 
 def gerar_embedding(texto, prefixo="query"):
