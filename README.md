@@ -20,7 +20,7 @@ API que detecta a intenção de comandos em linguagem natural (ex: "desliga o ar
 Antes de rodar o projeto, baixe o modelo de embedding usado para detecção de intenção:
 
 ```bash
-ollama pull intfloat-multilingual-e5-large:f32
+ollama pull jeffh/intfloat-multilingual-e5-large:f32
 ```
 
 > Existem outras variantes desse modelo disponíveis no Ollama (`:q8_0`, menor e mais rápida, ou `:f16`, intermediária). O nome usado no projeto deve bater exatamente com o configurado no `.env` (veja a seção abaixo).
