@@ -16,3 +16,15 @@ def endpoint_detectar(msg: Mensagem):
     texto = gerar_texto(intencao, sala, temperatura)
     res = send_prompt(texto)
     return res
+
+
+@app.post("/embedding")
+def endpoint_detectar(msg: Mensagem):
+    intencao = detectar_intencao(msg.texto)
+    sala = extrair_sala(msg.texto)
+    temperatura = extrair_temperatura(msg.texto)
+    return {
+        "intencao": intencao,
+        "sala": sala,
+        "temperatura": temperatura
+    }

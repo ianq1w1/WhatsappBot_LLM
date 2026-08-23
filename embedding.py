@@ -53,8 +53,8 @@ def detectar_intencao(texto_usuario, limiar=0.55):
     print(f"  Scores: {resultados}")
 
     if melhor_score > limiar:
-        return melhor_intencao, melhor_score
-    return None, melhor_score
+        return melhor_intencao
+    return None
 
 
 def extrair_sala(texto):
