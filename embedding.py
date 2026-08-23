@@ -27,7 +27,9 @@ def cosine_sim(a, b):
 comandos = {
     "ligar_ar": ["ligar ar", "ligar ar-condicionado", "ativa o ar", "acender o ar", "ligar"],
     "desligar_ar": ["desligar ar", "desliga o ar", "para o ar-condicionado", "desativa o ar"],
-    "ajustar_temp": ["mudar temperatura para", "ajustar temperatura para", "coloca a temperatura em"]
+    "ajustar_temp": ["mudar temperatura para", "ajustar temperatura para", "coloca a temperatura em"],
+    "saudacao": ["oi", "olá", "bom dia", "boa tarde", "boa noite", "e aí", "opa"],
+    "despedida": ["tchau", "até mais", "falou", "até logo", "obrigado", "valeu"]
 }
 
 # pré-computa os embeddings dos exemplos (roda 1x, quando o módulo é importado)
