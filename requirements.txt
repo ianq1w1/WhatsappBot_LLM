@@ -3,3 +3,8 @@ requests
 fastapi
 uvicorn
 python-dotenv
+contextlib
+
+torch
+transformers
+pydantic
